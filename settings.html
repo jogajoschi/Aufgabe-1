@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Settings</title>
+</head>
+
+<body>
+  <h1>Profile Settings</h1>
+
+
+   <fieldset>
+    <legend>Base Data</legend>
+    <label for="firstName">First Name</label><br>
+    <input type="text" id="firstName" name="firstName" placeholder="Dein Vorname"><br>
+
+    <label for="lastName">Last Name</label><br>
+    <input type="text" id="lastName" name="lastName" placeholder="Dein Nachname"><br>
+
+    <label for="cOT">Coffee or Tea?</label><br>
+    <select name="cOT[]" size="1" id="cOT" multiple>
+      <option value="coffee">Coffee</option>
+      <option value="tea">Tea</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Tell me something about you</legend>
+    <textarea name="message" rows="2" cols="30">Leave a comment here</textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Pefered Chat Layout</legend>
+    <label for="oneLine">Username and message in one line</label>
+    <input type="radio" name="layout" id="oneLine">
+    <label for="speratedLines">Username and message in seperated lines</label>
+    <input type="radio" name="layout" id="speratedLines" >
+  </fieldset>
+
+  <button type="button">Cancel</button>
+  <button type="button">Save</button>
+</body>
+
+</html>
